@@ -11,15 +11,31 @@ int main(int argc, char *argv[]){
     double a, h, x, y;
     int n;
 
-    cout << "Podaj liczbe a: \n";
-    cin >> a;
+    for (;;){
+        cout << "Podaj liczbe a: \n";
+        if(cin >> a){
+            break;
+        }
+        cin.clear();
+        cin.ignore(512, '\n');
+    }
+    for (;;){
+        cout << "Podaj krok h: \n";
+        if(cin >> h){
+            break;
+        }
+        cin.clear();
+        cin.ignore(512, '\n');
+    }
+    for (;;){
+        cout << "Podaj ilość powtórzeń n: \n";
+        if(cin >> a){
+            break;
+        }
+        cin.clear();
+        cin.ignore(512, '\n');
+    }
         
-    cout << "Podaj krok h: \n";
-    cin >> h;
-
-    cout << "Podaj ilość powtórzeń n: \n";
-    cin >> n;
-
     for( int i=0 ; i<=n ; i++) {
         //   result = sin (param*PI/180);
         //   Tworze argumenty dla funkcji zgodnie ze wzorem: x=a, a+h, ..., a+n*h
@@ -30,6 +46,8 @@ int main(int argc, char *argv[]){
         cout << "Dla n = " << i << " x wynosi : " << x << " wartość funkcji wynosi = " << y << "\n" ;
     }
 
-    system("pause");
     return 0;
 }
+
+
+// Tutaj trzeba jeszcze dodać sprawdzanie dla n =! liczb naturalnych
