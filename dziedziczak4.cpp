@@ -12,11 +12,12 @@ int main(int argc, char *argv[]){
     //  znak/znaki te będa liczbą
     for (;;){
         cout << "Podaj liczbe powtorzen: " ;
-        if(cin >> k && k >= 0){
+        if(cin >> k && k > 0){
             break;
         }
         cin.clear();
         cin.ignore(512, '\n');
+        cout << "Liczba powtorzen musi byc > 0 \n" ;
     }
 
     // Tutaj pętla licząca sigme
