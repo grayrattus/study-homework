@@ -5,14 +5,14 @@ using namespace std;
 int main(int argc, char *argv[]){
     cout << "Dziedziczak Artur" << endl;
     // Deklaracja i inicjalizacja zmiennych
-    int K = 0;
+    int k = 0;
     float sum = 0;
 
     // Pętla, która powoduje, że użytkownik będzie proszony o wprowadzanie K do moementu aż
     //  znak/znaki te będa liczbą
     for (;;){
-        cout << "Podaj liczbę pwtórzeń: " ;
-        if(cin >> K){
+        cout << "Podaj liczbe powtorzen: " ;
+        if(cin >> k && k >= 0){
             break;
         }
         cin.clear();
@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
     }
 
     // Tutaj pętla licząca sigme
-    for ( int j = 1 ; j <= K ; j++ ){
+    for ( int j = 1 ; j <= k ; j++ ){
         sum = sum + (( j * j + 1.0 )/(2.0*j));
     }
 
