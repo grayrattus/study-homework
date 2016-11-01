@@ -44,7 +44,7 @@ int main(int argc, char *argv[]){
             cout << "n - musi byc > 0\n" ;
         }
 
-        for( int i=1 ; i<=n ; i++) {
+        for( int i=0 ; i<=n ; i++) {
             //   result = sin (param*PI/180);
             //   Tworze argumenty dla funkcji zgodnie ze wzorem: x=a, a+h, ..., a+n*h
             x = a+h*i;
@@ -57,6 +57,3 @@ int main(int argc, char *argv[]){
 
     return 0;
 }
-
-
-// Tutaj trzeba jeszcze dodać sprawdzanie dla n =! liczb naturalnych
